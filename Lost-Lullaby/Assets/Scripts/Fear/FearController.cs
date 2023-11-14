@@ -10,7 +10,7 @@ public class FearController : MonoBehaviour
     private Image fearBarFill;
     private const float MAX_FEAR = 100f;
     public float fear;
-    public float fearIncRate = 0.25f;
+    public float fearIncRate = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
