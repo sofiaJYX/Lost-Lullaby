@@ -5,13 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //set fear to initially be 0
-    public float fear = 0f;
-    //TESTING
-    public float moveSpeed = 5f;
+    public float fear;
     // Start is called before the first frame update
     void Start()
     {
-       
+        fear = 0f;
     }
 
     // Update is called once per frame
@@ -22,7 +20,7 @@ public class PlayerController : MonoBehaviour
     //if our item is collected by a player
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Touched by Player");
+        Debug.Log("Item was touched by Player");
         if (collision.tag == "Collectible")
         {
             //call collected
@@ -34,7 +32,10 @@ public class PlayerController : MonoBehaviour
     //decrease fear for collected item
     void DecreaseFear()
     {
-        Debug.Log("Decreased");
+        Debug.Log("Fear Decreased");
+        //decrease 30 of the fear
         fear -= 30f;
+        //Decrease 30% of the fear 
+        //fear *= 0.3f;
     }
 }

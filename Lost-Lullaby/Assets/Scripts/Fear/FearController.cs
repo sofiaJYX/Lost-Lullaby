@@ -7,24 +7,33 @@ public class FearController : MonoBehaviour
 {
     public PlayerController player;
 
+    //fear bar image
     private Image fearBarFill;
+    //max fear
     private const float MAX_FEAR = 100f;
+    //fear of player
     public float fear;
-    public float fearIncRate = 1.0f;
+    //how much we gain fear
+    public float fearIncRate = 10f;
     // Start is called before the first frame update
     void Start()
     {
+        //set our fearbar fill to be the spooky image
         fearBarFill = GetComponent<Image>();
+        //our fear is equal to players fear
         fear = player.fear;
-        fearBarFill.fillAmount = fear;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        //update fear to increase slowly
         fear += fearIncRate * Time.deltaTime;
+        //make sure fear does not exceed 100
         fear = Mathf.Min(fear, MAX_FEAR);
+        //update fill amount of UI
         fearBarFill.fillAmount = fear / MAX_FEAR;
     }
-
 }
+

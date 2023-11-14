@@ -5123,7 +5123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2086852345}
   fear: 0
-  fearIncRate: 0.25
+  fearIncRate: 10
 --- !u!114 &1813305828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10785,7 +10785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fear: 0
-  moveSpeed: 5
 --- !u!212 &2086852346
 SpriteRenderer:
   m_ObjectHideFlags: 0
