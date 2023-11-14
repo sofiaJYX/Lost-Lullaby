@@ -14,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     bool crouch = false;
     //player run speed
     public float runSpeed = 25f;
+    //access our animator by reference
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +28,14 @@ public class PlayerMovement : MonoBehaviour
     {
         //Get input from player to move Left and Right
         horizontalMovement = Input.GetAxisRaw("Horizontal")*runSpeed;
-
+        //give our animators variable speed to be that of the horizontalMovement
+        animator.SetFloat("speed", Mathf.Abs(horizontalMovement));
         //if we pressed space to jump
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            //give our animators variable isJumping the value of jump
+            animator.SetBool("isJumping", jump);
         }
 
         //if we pressed space left ctrl to crouch
@@ -53,5 +59,12 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMovement * Time.fixedDeltaTime, crouch, jump);
         //stop jumping
         jump = false;
+    }
+
+    //stop jumping when we land
+    public void OnLanding()
+    {
+        //give our animators variable isJumping the value of jump
+        animator.SetBool("isJumping", false);
     }
 }
