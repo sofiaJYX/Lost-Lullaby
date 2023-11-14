@@ -17,20 +17,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //TESTING
-        // Get horizontal input (left/right arrow keys or A/D keys).
-        float horizontalInput = Input.GetAxis("Horizontal");
-
-        // Calculate the movement vector.
-        Vector3 movement = new Vector3(horizontalInput, 0f, 0f) * moveSpeed * Time.deltaTime;
-
-        // Update the player's position.
-        transform.Translate(movement);
+        
     }
     //if our item is collected by a player
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Touched");
+        Debug.Log("Touched by Player");
         if (collision.tag == "Collectible")
         {
             //call collected
