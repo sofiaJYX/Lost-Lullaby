@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     //set fear to initially be 0
     public float fear;
+    public FearController fearBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,10 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Fear Decreased");
         //decrease 30 of the fear
-        fear -= 30f;
+        // fear -= 30f;
+
+        fearBar.setFear(-30f);
+
         //Decrease 30% of the fear 
         //fear *= 0.3f;
     }

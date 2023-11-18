@@ -8,7 +8,7 @@ public class FearController : MonoBehaviour
     public PlayerController player;
 
     //fear bar image
-    private Image fearBarFill;
+    public Image fearBarFill;
     //max fear
     private const float MAX_FEAR = 100f;
     //fear of player
@@ -34,6 +34,11 @@ public class FearController : MonoBehaviour
         fear = Mathf.Min(fear, MAX_FEAR);
         //update fill amount of UI
         fearBarFill.fillAmount = fear / MAX_FEAR;
+    }
+
+    public void setFear(float amount)
+    {
+        fear += amount;
     }
 }
 

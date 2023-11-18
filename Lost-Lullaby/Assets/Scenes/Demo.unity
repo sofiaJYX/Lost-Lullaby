@@ -326,7 +326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -325, y: 250}
+  m_AnchoredPosition: {x: -188, y: 167}
   m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103501792
@@ -5122,6 +5122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2086852345}
+  fearBarFill: {fileID: 1813305828}
   fear: 0
   fearIncRate: 10
 --- !u!114 &1813305828
@@ -10779,12 +10780,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2086852339}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 025193b9bc07f5e428fbf8280fe15246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fear: 0
+  fearBar: {fileID: 1813305827}
 --- !u!212 &2086852346
 SpriteRenderer:
   m_ObjectHideFlags: 0
