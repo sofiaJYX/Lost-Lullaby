@@ -3,15 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Collectible
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -47,6 +47,8 @@ TagManager:
   - name: Tile
     uniqueID: 63109995
     locked: 0
+  - name: Collectible
+    uniqueID: 893587433
   - name: Foreground
     uniqueID: 621160455
     locked: 0
