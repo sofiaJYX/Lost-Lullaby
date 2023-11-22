@@ -19,9 +19,9 @@ public class FawnMovement : MonoBehaviour
         float playerSpeed = Mathf.Abs(player.GetComponent<PlayerMovement>().horizontalMovement);
 
         // Set the "isWalking" parameter in the animator based on the player's movement
-        animator.SetBool("isWalking", playerSpeed > 0);
+        //animator.SetBool("isWalking", playerSpeed > 0);
 
-        // Flip the deer's sprite based on the player's movement direction
+        //Flip the deer's sprite based on the player's movement direction
         if (playerSpeed > 0)
         {
             if (player.position.x > transform.position.x)
