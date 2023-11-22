@@ -1998,6 +1998,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1018180144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018180146}
+  - component: {fileID: 1018180145}
+  m_Layer: 0
+  m_Name: CameraTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1018180145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018180144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f258e549a907c47b289b9118cd597e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedObject: {fileID: 2086852340}
+  updateSpeed: 7
+  trackingOffset: {x: 0, y: 0}
+--- !u!4 &1018180146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018180144}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058940464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,6 +2339,7 @@ GameObject:
   - component: {fileID: 1149328864}
   - component: {fileID: 1149328863}
   - component: {fileID: 1149328862}
+  - component: {fileID: 1149328865}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2367,12 +2415,27 @@ Transform:
   m_GameObject: {fileID: 1149328861}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -0.61, z: -10}
+  m_LocalPosition: {x: 0.5, y: -1, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1149328865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149328861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f258e549a907c47b289b9118cd597e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedObject: {fileID: 1018180146}
+  updateSpeed: 5
+  trackingOffset: {x: 0, y: 0}
 --- !u!1 &1153414899
 GameObject:
   m_ObjectHideFlags: 0
@@ -10745,7 +10808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a232c34368d2a4c808cd198d5eee09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 400
+  m_JumpForce: 500
   m_CrouchSpeed: 0.434
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -11137,3 +11200,4 @@ SceneRoots:
   - {fileID: 1163128741}
   - {fileID: 1153414900}
   - {fileID: 926521626}
+  - {fileID: 1018180146}
