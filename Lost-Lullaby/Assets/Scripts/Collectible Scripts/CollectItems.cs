@@ -7,6 +7,8 @@ public class CollectItems : MonoBehaviour
     //our game object to destroy
     [SerializeField]
     GameObject item;
+    [SerializeField] AudioClip clip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class CollectItems : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
+
+            AudioSource.PlayClipAtPoint(clip, transform.position);
             //... We want to remove the entire object from scene
             Debug.Log("Destroyed item");
             Destroy(item);
