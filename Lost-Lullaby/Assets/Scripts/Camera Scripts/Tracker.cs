@@ -8,7 +8,7 @@ public class Tracker : MonoBehaviour
     public Transform trackedObject;
 
     //Speed at which the camera updates
-    public float updateSpeed = 5;
+    public float updateSpeed = 10;
 
     public Vector2 trackingOffset;
     private Vector3 offset;
