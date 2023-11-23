@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     //get reference to character controller
     public CharacterController2D controller;
     //how much we move horizontally
-    float horizontalMovement = 0f;
+    public float horizontalMovement = 0f;
     //are we jumping?
     bool jump = false;
     //are we crouching?
