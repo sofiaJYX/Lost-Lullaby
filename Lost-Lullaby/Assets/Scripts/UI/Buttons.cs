@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Buttons : MonoBehaviour
 {
-    private const int NUM_SCENES = 9;
+    private const int NUM_SCENES = 7;
 
     public void NextScene()
     {

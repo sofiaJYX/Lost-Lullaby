@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CaveSplashscreen.unity
     guid: a1258a5a00534e14fa1ee813db4fd9f9
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: a5078551bf81fdb4b82632349193a294
   m_configObjects: {}
