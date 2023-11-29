@@ -6,10 +6,7 @@ using UnityEngine.UI;
 
 public class Buttons : MonoBehaviour
 {
-    [SerializeField] AudioSource music;
-    [SerializeField] Image volumeOnIcon;
-    [SerializeField] Image volumeOffIcon;
-    private const int NUM_SCENES = 6;
+    private const int NUM_SCENES = 9;
 
     public void NextScene()
     {
@@ -26,19 +23,5 @@ public class Buttons : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-    }
-
-    public void TurnMusicOff()
-    {
-        music.Stop();
-        volumeOnIcon.gameObject.SetActive(false);
-        volumeOffIcon.gameObject.SetActive(true);
-    }
-
-    public void TurnMusicOn()
-    {
-        music.Play();
-        volumeOffIcon.gameObject.SetActive(false);
-        volumeOnIcon.gameObject.SetActive(true);
     }
 }
