@@ -5,7 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: f4917e7d90243ed4a889b1374732dab0
+  - enabled: 1
+    path: Assets/Scenes/HouseSplashscreen.unity
+    guid: 24766f8746692cd4caac9325c0c7edd7
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: c517766f9434e8f4990e6324c44547b5
+  - enabled: 1
+    path: Assets/Scenes/ForestSplashscreen.unity
+    guid: a8226546e88774941bba1e69a9720b38
+  - enabled: 1
+    path: Assets/Scenes/ForestScene.unity
+    guid: 1f07d6aae8be9477badcce336351e6b1
+  - enabled: 1
+    path: Assets/Scenes/CaveSplashscreen.unity
+    guid: a1258a5a00534e14fa1ee813db4fd9f9
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: a5078551bf81fdb4b82632349193a294
   m_configObjects: {}
