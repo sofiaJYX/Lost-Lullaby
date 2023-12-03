@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FearController : MonoBehaviour
 {
     public PlayerController player;
+
+    private string currentSceneName = SceneManager.GetActiveScene().name;
 
     //fear bar image
     public Image fearBarFill;
@@ -14,7 +17,7 @@ public class FearController : MonoBehaviour
     //fear of player
     public float fear;
     //how much we gain fear
-    public float fearIncRate = 10f;
+    public float fearIncRate = 3f;
     // Start is called before the first frame update
     void Start()
     {
