@@ -38,15 +38,18 @@ void Update()
         animator.SetBool("isJumping", jump);
     }
 
-    if (Input.GetButtonDown("Crouch"))
-    {
-        crouch = true;
+        //if we pressed space left ctrl to crouch
+        if (Input.GetButtonDown("Crouch"))
+        {
+            Debug.Log("Crouching");
+            crouch = true;
+        }
+        //We use an else if to make the player HOLD Left CTRL to crouch
+        else if (Input.GetButtonUp("Crouch"))
+        {
+            crouch = false;
+        }
     }
-    else if (Input.GetButtonUp("Crouch"))
-    {
-        crouch = false;
-    }
-}
 
     void FixedUpdate()
     {
