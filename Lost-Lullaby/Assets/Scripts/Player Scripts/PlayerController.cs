@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
 
     private string currentSceneName;
 
+    //Counter for music box pieces
+    public int musicBoxPieces = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +32,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y <= playerVoidLevel || fear >= 100.0)
+        if(transform.position.y <= playerVoidLevel)
         {
             SceneManager.LoadScene(currentSceneName);
         }
@@ -45,7 +48,18 @@ public class PlayerController : MonoBehaviour
             //call collected
             DecreaseFear();
         }
+
         //method for music box and update UI
+        if(collision.tag == "BoxPiece")
+        {
+            musicBoxPieces++;
+            Debug.Log("Music Box Pieces: " + musicBoxPieces);
+        }
+
+        if(collision.tag == "MusicBox")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     //decrease fear for collected item
