@@ -38,7 +38,7 @@ public class FawnMovement : MonoBehaviour
         {
             Debug.Log("Fawn Jump Movement");
             jump = true;
-            animator.SetBool("isJumping", jump);
+            //animator.SetBool("isJumping", jump);
         }
     }
 
