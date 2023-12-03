@@ -40,6 +40,7 @@ public class FearController : MonoBehaviour
         fear += fearIncRate * Time.deltaTime;
         //make sure fear does not exceed 100
         fear = Mathf.Min(fear, MAX_FEAR);
+
         //update fill amount of UI
         fearBarFill.fillAmount = fear / MAX_FEAR;
 
@@ -52,6 +53,11 @@ public class FearController : MonoBehaviour
     public void setFear(float amount)
     {
         fear += amount;
+
+        if(fear < 0)
+        {
+            fear = 0;
+        }
     }
 }
 
