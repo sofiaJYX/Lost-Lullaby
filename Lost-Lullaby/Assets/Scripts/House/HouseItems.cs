@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -12,15 +13,17 @@ public class HouseItems : MonoBehaviour
     bool shown = false;
     static int itemCount = 0;
     const int MAX_ITEMS = 13;
-    [SerializeField] Text itemCounter; 
+    [SerializeField] Text itemCounter;
     [SerializeField] Text itemCounterShadow;
+    [SerializeField] GameObject itemCounterObject;
     static bool showingMessage = false;
 
     [SerializeField] UIScriptLvl1 uiScript;
     [SerializeField] GameObject musicBox;
     //[SerializeField] AudioClip tune;
-    [SerializeField] GameObject darkPanel;
+    //[SerializeField] GameObject darkPanel;
     [SerializeField] HousePlayerMovement movementScript;
+    [SerializeField] GameObject lightFlash;
 
     private void Start()
     {
@@ -29,7 +32,7 @@ public class HouseItems : MonoBehaviour
 
     IEnumerator OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Player" && shown == false) //only display if player hasnt seen it already
+        if (collider.CompareTag("Player") && shown == false) //only display if player hasnt seen it already
         {
             //AudioSource.PlayClipAtPoint(clip, transform.position);
             Debug.Log("Contact with item");
@@ -41,8 +44,7 @@ public class HouseItems : MonoBehaviour
             }
             else    //when player finds music box
             {
-                //idk animate and play music again
-                MusicBoxFound();
+                StartCoroutine(MusicBoxFound());
             }
         }
     }
@@ -62,15 +64,32 @@ public class HouseItems : MonoBehaviour
 
         if (itemCount == MAX_ITEMS)  //if all items collected, start music box tune/events
         {
+            itemCounterObject.SetActive(false);
             StartCoroutine(uiScript.MusicBoxStart());
             musicBox.SetActive(true);
         }
     }
 
-    void MusicBoxFound()
+    IEnumerator MusicBoxFound()
     {
+        //animate and play music
         itemInfo.SetActive(true);
         movementScript.enabled = false;
+        //play sound
+        yield return new WaitForSeconds(5);
+        StartCoroutine(Flash(2));
         //StartCoroutine(uiScript.FadeToBlack());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    IEnumerator Flash(int times)
+    {
+        for (int i = 0; i < times; i++)
+        {
+            lightFlash.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            lightFlash.SetActive(false);
+            yield return new WaitForSeconds(0.3f);
+        }
     }
 }
