@@ -21,7 +21,6 @@ public class HouseItems : MonoBehaviour
     [SerializeField] UIScriptLvl1 uiScript;
     [SerializeField] GameObject musicBox;
     //[SerializeField] AudioClip tune;
-    //[SerializeField] GameObject darkPanel;
     [SerializeField] HousePlayerMovement movementScript;
     [SerializeField] GameObject lightFlash;
 
@@ -70,15 +69,13 @@ public class HouseItems : MonoBehaviour
         }
     }
 
-    IEnumerator MusicBoxFound()
+    IEnumerator MusicBoxFound() //animate and play music
     {
-        //animate and play music
         itemInfo.SetActive(true);
         movementScript.enabled = false;
-        //play sound
+        //AudioSource.PlayClipAtPoint(tune, transform.position);
         yield return new WaitForSeconds(5);
         StartCoroutine(Flash(2));
-        //StartCoroutine(uiScript.FadeToBlack());
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
