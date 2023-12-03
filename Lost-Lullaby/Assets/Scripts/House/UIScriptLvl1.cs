@@ -16,22 +16,17 @@ public class UIScriptLvl1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(startDialogue());
+        StartCoroutine(StartDialogue());
     }
 
-    private IEnumerator startDialogue()
+    private IEnumerator StartDialogue()
     {
         movementScript.enabled = false;
         yield return new WaitForSeconds(2);
-        startMessage.SetActive(true);
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
-        startMessage.SetActive(false);
-        movementScript.enabled = true;
+        yield return StartCoroutine(ShowMessage(startMessage));
 
         yield return new WaitForSeconds(1);
-        tip1.SetActive(true);
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
-        tip1.SetActive(false);
+        yield return StartCoroutine(ShowMessage(tip1));
     }
 
 
@@ -40,15 +35,18 @@ public class UIScriptLvl1 : MonoBehaviour
         //AudioSource.PlayClipAtPoint(tune, transform.position);
         movementScript.enabled = false;
         yield return new WaitForSeconds(2);
-        MusicTextBox.SetActive(true);
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));  //display until player presses E
-        MusicTextBox.SetActive(false);
-        movementScript.enabled = true;
+        yield return StartCoroutine(ShowMessage(MusicTextBox));
 
         yield return new WaitForSeconds(1);
+        yield return StartCoroutine(ShowMessage(tip2));
+    }
 
-        tip2.SetActive(true);
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E)); //display until player presses E
-        tip2.SetActive(false);
+    public IEnumerator ShowMessage(GameObject obj)
+    {
+        movementScript.enabled = false; 
+        obj.SetActive(true);
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));  //display until player presses E
+        obj.SetActive(false);
+        movementScript.enabled = true;
     }
 }

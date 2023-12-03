@@ -12,7 +12,7 @@ public class HouseItems : MonoBehaviour
     [SerializeField] GameObject itemInfo;
     bool shown = false;
     static int itemCount = 0;
-    const int MAX_ITEMS = 13;
+    const int MAX_ITEMS = 1;
     [SerializeField] Text itemCounter;
     [SerializeField] Text itemCounterShadow;
     [SerializeField] GameObject itemCounterObject;
@@ -76,6 +76,7 @@ public class HouseItems : MonoBehaviour
         //AudioSource.PlayClipAtPoint(tune, transform.position);
         yield return new WaitForSeconds(5);
         StartCoroutine(Flash(2));
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
