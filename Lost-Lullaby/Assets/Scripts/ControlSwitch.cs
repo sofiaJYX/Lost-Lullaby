@@ -5,14 +5,16 @@ using UnityEngine;
 public class ControlSwitch : MonoBehaviour
 {
     [SerializeField] FawnMovement fm;
+    [SerializeField] FawnController fcc;
     [SerializeField] PlayerMovement pm;
-    [SerializeField] CharacterController2D cc;
+    [SerializeField] CharacterController2D pcc;
     private bool deerMode = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        fm.enabled = false;
+        fcc.enabled = false;
     }
 
     // Update is called once per frame
@@ -33,16 +35,18 @@ public class ControlSwitch : MonoBehaviour
     void SwitchToDeer()
     {
         pm.enabled = false;
-        cc.enabled = false;
+        pcc.enabled = false;
         fm.enabled = true;
+        fcc.enabled = true;
         deerMode = true;
     }
 
     void SwitchToChild()
     {
         pm.enabled = true;
-        cc.enabled = true;
+        pcc.enabled = true;
         fm.enabled = false;
+        fcc.enabled = false;
         deerMode = false;
     }
 }

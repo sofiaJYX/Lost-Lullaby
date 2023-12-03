@@ -20840,6 +20840,18 @@ PrefabInstance:
       propertyPath: m_CullingMode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1439072625029786600, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 997850327}
+    - target: {fileID: 1439072625029786600, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439072625029786600, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1590669122}
     - target: {fileID: 2009681569293579054, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
       propertyPath: m_TagString
       value: Fawn
@@ -20850,7 +20862,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1390171541185010447, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1942667370}
+    - targetCorrespondingSourceObject: {fileID: 1390171541185010447, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1354708183}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2009681569293579054, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
       insertIndex: -1
@@ -20858,6 +20876,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2009681569293579054, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1590669119}
+    - targetCorrespondingSourceObject: {fileID: 2009681569293579054, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590669122}
+    - targetCorrespondingSourceObject: {fileID: 2009681569293579054, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590669126}
   m_SourcePrefab: {fileID: 100100000, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
 --- !u!1 &1240827784
 GameObject:
@@ -20923,6 +20947,37 @@ Transform:
   - {fileID: 2126555779}
   - {fileID: 2023268656}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1354708182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1354708183}
+  m_Layer: 0
+  m_Name: ceilingcheck (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1354708183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354708182}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.062, y: 0.417, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1590669120}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1388850939
 GameObject:
@@ -21243,7 +21298,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1590669119
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21276,7 +21331,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.022984743, y: 0.043755412}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21287,8 +21342,75 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.03, y: 0.8}
+  m_Size: {x: 0.9271159, y: 0.80442786}
   m_EdgeRadius: 0
+--- !u!4 &1590669120 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1390171541185010447, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+  m_PrefabInstance: {fileID: 1210225878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1590669122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590669113}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323604e70254eb14993352f3b3ff39a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 750
+  m_MovementSmoothing: 0.05
+  m_AirControl: 1
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_GroundCheck: {fileID: 1942667370}
+  m_CeilingCheck: {fileID: 1354708183}
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1590669123}
+        m_TargetAssemblyTypeName: FawnMovement, Assembly-CSharp
+        m_MethodName: OnLanding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1590669123 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1439072625029786600, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
+  m_PrefabInstance: {fileID: 1210225878}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590669113}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7fab88282a9a24aafebb2e6240bd88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1590669126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590669113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19209f2eb718994bad9e64d62e3c658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fm: {fileID: 1590669123}
+  fcc: {fileID: 1590669122}
+  pm: {fileID: 997850329}
+  pcc: {fileID: 997850333}
 --- !u!1 &1705841413
 GameObject:
   m_ObjectHideFlags: 0
@@ -21831,6 +21953,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1 &1942667369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1942667370}
+  m_Layer: 0
+  m_Name: groundcheck (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1942667370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942667369}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.027, y: -0.339, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1590669120}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2023268655
 GameObject:
   m_ObjectHideFlags: 0
