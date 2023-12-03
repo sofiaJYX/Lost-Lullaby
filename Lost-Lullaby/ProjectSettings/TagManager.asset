@@ -10,8 +10,9 @@ TagManager:
   - TransparentFX
   - Ignore Raycast
   - Water
+  - Water
   - UI
-  - Player
+  - Effect
   - 
   - 
   - 
@@ -49,6 +50,10 @@ TagManager:
     locked: 0
   - name: Collectible
     uniqueID: 893587433
+    locked: 0
   - name: Foreground
     uniqueID: 621160455
+    locked: 0
+  - name: Effects
+    uniqueID: 2044100805
     locked: 0
