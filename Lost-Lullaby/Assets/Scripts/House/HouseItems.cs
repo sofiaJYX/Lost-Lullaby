@@ -12,7 +12,7 @@ public class HouseItems : MonoBehaviour
     [SerializeField] GameObject itemInfo;
     bool shown = false;
     static int itemCount = 0;
-    const int MAX_ITEMS = 1;
+    const int MAX_ITEMS = 13;
     [SerializeField] Text itemCounter;
     [SerializeField] Text itemCounterShadow;
     [SerializeField] GameObject itemCounterObject;
