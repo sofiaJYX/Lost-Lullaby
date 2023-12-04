@@ -12,7 +12,7 @@ public class UIScriptLvl1 : MonoBehaviour
     [SerializeField] GameObject tip1;
     [SerializeField] GameObject MusicTextBox;
     [SerializeField] GameObject tip2;
-    //[SerializeField] AudioClip tune;
+    [SerializeField] AudioClip tune;
     [SerializeField] HousePlayerMovement movementScript;
     [SerializeField] UniversalRenderPipelineAsset URP;
     //[SerializeField] Camera cam;
@@ -39,7 +39,7 @@ public class UIScriptLvl1 : MonoBehaviour
 
     public IEnumerator MusicBoxStart()
     {
-        //AudioSource.PlayClipAtPoint(tune, transform.position);
+        AudioSource.PlayClipAtPoint(tune, transform.position);
         movementScript.enabled = false;
         yield return new WaitForSeconds(2);
         yield return StartCoroutine(ShowMessage(MusicTextBox));

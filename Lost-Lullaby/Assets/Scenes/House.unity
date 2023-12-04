@@ -317,6 +317,7 @@ MonoBehaviour:
   tip1: {fileID: 195008461}
   MusicTextBox: {fileID: 445418160}
   tip2: {fileID: 790371024}
+  tune: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
   movementScript: {fileID: 1888148335}
   URP: {fileID: 11400000, guid: 23138010bbf8891488a4da192f294234, type: 2}
 --- !u!1 &33610488
@@ -406,9 +407,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e63c4e81a8bb64feeaef2df83f30f702, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 1858743309}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
@@ -2543,6 +2552,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 447664801}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
@@ -4873,6 +4886,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e63c4e81a8bb64feeaef2df83f30f702, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 1071976382}
@@ -5126,6 +5143,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 160623591}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
@@ -10004,6 +10025,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 1676141086}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
@@ -15424,6 +15449,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1200889442}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
       objectReference: {fileID: 563289285}
@@ -15582,6 +15611,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 39846515}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
@@ -16625,7 +16658,7 @@ MonoBehaviour:
   itemCounterObject: {fileID: 661388446}
   uiScript: {fileID: 31730980}
   musicBox: {fileID: 1071976382}
-  tune: {fileID: 0}
+  tune: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
   movementScript: {fileID: 1888148335}
   lightFlash: {fileID: 353806538}
 --- !u!61 &1385343899
@@ -17223,6 +17256,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 1709210451}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: textBox
       value: 
@@ -44910,6 +44947,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1901895402}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
       objectReference: {fileID: 920327756}
@@ -45291,6 +45332,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 1031138196}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
@@ -45845,7 +45890,7 @@ MonoBehaviour:
   itemCounterObject: {fileID: 661388446}
   uiScript: {fileID: 31730980}
   musicBox: {fileID: 1071976382}
-  tune: {fileID: 0}
+  tune: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
   movementScript: {fileID: 1888148335}
   lightFlash: {fileID: 353806538}
 --- !u!61 &2038142060
@@ -46221,6 +46266,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 589750724}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
       objectReference: {fileID: 859452730}
@@ -46533,6 +46582,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 1628833675}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 

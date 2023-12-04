@@ -63,6 +63,7 @@ public class HouseItems : MonoBehaviour
 
         if (itemCount == MAX_ITEMS)  //if all items collected, start music box tune/events
         {
+            AudioSource.PlayClipAtPoint(tune, transform.position);
             itemCounterObject.SetActive(false);
             StartCoroutine(uiScript.MusicBoxStart());
             musicBox.SetActive(true);
