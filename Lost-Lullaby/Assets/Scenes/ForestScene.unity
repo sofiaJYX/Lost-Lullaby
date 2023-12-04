@@ -16726,7 +16726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1098801224318493644, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.7
+      value: -9.6
       objectReference: {fileID: 0}
     - target: {fileID: 1098801224318493644, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16826,7 +16826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6663677561010082095, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.081358455
+      value: 0.08135867
       objectReference: {fileID: 0}
     - target: {fileID: 7854258024046842658, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
       propertyPath: EmissionModule.m_BurstCount
