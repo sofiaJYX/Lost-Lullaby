@@ -2536,6 +2536,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e4f8affe99e240c5ad0047a49250e58, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 447664801}
@@ -4873,6 +4877,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1071976382}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: tune
+      value: 
+      objectReference: {fileID: 8300000, guid: bfabf8fb29bd64f219ea52770dc1e5dc, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: itemInfo
       value: 
       objectReference: {fileID: 193236401}
@@ -5110,6 +5118,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1e8f83136a53b4d119aff7bf2c7fdfc5, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
@@ -9984,6 +9996,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e63c4e81a8bb64feeaef2df83f30f702, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
@@ -15400,6 +15416,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: acaf2fdccdc8e4505936aec124ee90e4, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 1200889442}
@@ -15554,6 +15574,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e63c4e81a8bb64feeaef2df83f30f702, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
@@ -16594,12 +16618,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 1385343895}
+  clip: {fileID: 8300000, guid: 852efd7a6fce24216a0265ee5141e9ed, type: 3}
   itemInfo: {fileID: 4134640}
   itemCounter: {fileID: 906675366}
   itemCounterShadow: {fileID: 604747300}
   itemCounterObject: {fileID: 661388446}
   uiScript: {fileID: 31730980}
   musicBox: {fileID: 1071976382}
+  tune: {fileID: 0}
   movementScript: {fileID: 1888148335}
   lightFlash: {fileID: 353806538}
 --- !u!61 &1385343899
@@ -17189,6 +17215,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e63c4e81a8bb64feeaef2df83f30f702, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
@@ -44872,6 +44902,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e63c4e81a8bb64feeaef2df83f30f702, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 1901895402}
@@ -45249,6 +45283,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c306b97e30bf74d93bbb571332a62e81, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
@@ -45800,12 +45838,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 2038142056}
+  clip: {fileID: 8300000, guid: e63c4e81a8bb64feeaef2df83f30f702, type: 3}
   itemInfo: {fileID: 1820923082}
   itemCounter: {fileID: 906675366}
   itemCounterShadow: {fileID: 604747300}
   itemCounterObject: {fileID: 661388446}
   uiScript: {fileID: 31730980}
   musicBox: {fileID: 1071976382}
+  tune: {fileID: 0}
   movementScript: {fileID: 1888148335}
   lightFlash: {fileID: 353806538}
 --- !u!61 &2038142060
@@ -46173,6 +46213,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 261d3da6eeb764ac7b8b0c5f3960c028, type: 3}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 589750724}
@@ -46481,6 +46525,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d565a5abdf8cc4800bf312d87870f9d2, type: 3}
     - target: {fileID: 5638155269633979549, guid: 062549f1ec12c664ea667af05b3242bf, type: 3}
       propertyPath: item
       value: 
