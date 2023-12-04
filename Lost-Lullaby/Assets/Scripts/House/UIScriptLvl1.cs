@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 using static Unity.Collections.Unicode;
 
@@ -12,10 +14,15 @@ public class UIScriptLvl1 : MonoBehaviour
     [SerializeField] GameObject tip2;
     //[SerializeField] AudioClip tune;
     [SerializeField] HousePlayerMovement movementScript;
+    [SerializeField] UniversalRenderPipelineAsset URP;
+    //[SerializeField] Camera cam;
 
     // Start is called before the first frame update
     void Start()
     {
+        //GraphicsSettings.transparencySortMode = TransparencySortMode.CustomAxis;
+        GraphicsSettings.renderPipelineAsset = URP;
+        //cam.transparencySortMode = TransparencySortMode.CustomAxis;
         StartCoroutine(StartDialogue());
     }
 
