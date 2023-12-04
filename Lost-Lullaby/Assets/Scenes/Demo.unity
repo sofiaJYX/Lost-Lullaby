@@ -936,11 +936,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 244342654}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &326716275 stripped
+--- !u!4 &402708188 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1098801224318493644, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7678188884211006530, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
   m_PrefabInstance: {fileID: 1140859725881098622}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &402708195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7346170569581230630, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+  m_PrefabInstance: {fileID: 1140859725881098622}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025193b9bc07f5e428fbf8280fe15246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &552059862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +2138,7 @@ GameObject:
   - component: {fileID: 1149328864}
   - component: {fileID: 1149328863}
   - component: {fileID: 1149328862}
+  - component: {fileID: 1149328866}
   - component: {fileID: 1149328865}
   m_Layer: 0
   m_Name: Main Camera
@@ -2210,6 +2222,19 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1149328865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149328861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54d59ce0d9b94c69bf8be5a3d19543f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+--- !u!114 &1149328866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10615,7 +10640,7 @@ PrefabInstance:
     - target: {fileID: 1439072625029786600, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 326716275}
+      objectReference: {fileID: 402708188}
     - target: {fileID: 6633320690654621504, guid: 3198d0e8c4d8545c9b5b1e456e3be0bc, type: 3}
       propertyPath: m_Name
       value: Fawn
@@ -10636,7 +10661,7 @@ PrefabInstance:
     - target: {fileID: 4373866983990994153, guid: 0a0bc9c2291bf475fbbb709aeaa223b3, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 402708195}
     - target: {fileID: 5672547610772480299, guid: 0a0bc9c2291bf475fbbb709aeaa223b3, type: 3}
       propertyPath: m_Name
       value: Fear Bar

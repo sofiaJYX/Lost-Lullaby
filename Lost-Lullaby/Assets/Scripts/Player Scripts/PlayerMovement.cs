@@ -22,21 +22,21 @@ public class PlayerMovement : MonoBehaviour
     {
         
     }
+void Update()
+{
+    horizontalMovement = Input.GetAxisRaw("Horizontal") * runSpeed;
+    animator.SetFloat("speed", Mathf.Abs(horizontalMovement));
 
-    // Update is called once per frame
-    void Update()
+    // Update isWalking parameter based on movement
+    bool isWalking = Mathf.Abs(horizontalMovement) > 0.1f; // Adjust the threshold as needed
+
+    animator.SetBool("isWalking", isWalking);
+
+    if (Input.GetButtonDown("Jump"))
     {
-        //Get input from player to move Left and Right
-        horizontalMovement = Input.GetAxisRaw("Horizontal")*runSpeed;
-        //give our animators variable speed to be that of the horizontalMovement
-        animator.SetFloat("speed", Mathf.Abs(horizontalMovement));
-        //if we pressed space to jump
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-            //give our animators variable isJumping the value of jump
-            animator.SetBool("isJumping", jump);
-        }
+        jump = true;
+        animator.SetBool("isJumping", jump);
+    }
 
         //if we pressed space left ctrl to crouch
         if (Input.GetButtonDown("Crouch"))
@@ -49,7 +49,6 @@ public class PlayerMovement : MonoBehaviour
         {
             crouch = false;
         }
-
     }
 
     void FixedUpdate()
