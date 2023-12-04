@@ -318,6 +318,7 @@ MonoBehaviour:
   MusicTextBox: {fileID: 445418160}
   tip2: {fileID: 790371024}
   movementScript: {fileID: 1888148335}
+  URP: {fileID: 11400000, guid: 23138010bbf8891488a4da192f294234, type: 2}
 --- !u!1 &33610488
 GameObject:
   m_ObjectHideFlags: 0
