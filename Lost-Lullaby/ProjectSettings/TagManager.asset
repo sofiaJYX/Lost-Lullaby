@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Backgound
+    uniqueID: 79395277
+    locked: 0
+  - name: Tilemap
+    uniqueID: 2224378797
+    locked: 0
+  - name: Player
+    uniqueID: 4073913699
+    locked: 0
+  - name: Effect
+    uniqueID: 3492081253
+    locked: 0
+  - name: UI
+    uniqueID: 4214940321
+    locked: 0

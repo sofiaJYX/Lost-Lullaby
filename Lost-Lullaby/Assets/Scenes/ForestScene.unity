@@ -279,7 +279,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 63109995
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 8.71875, y: 10.8125, z: 0}
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 815d944c000000006bfbc203e90f433507280625
+  m_ApplyToSortingLayers: 815d944c000000006bfbc203e90f433507280625cd79bb0463fdd2f2a1e23afb65ee24d0ad539584
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -783,8 +783,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 63109995
-  m_SortingLayer: 1
+  m_SortingLayerID: -2070588499
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 2.25, y: 1.1875, z: 0}
@@ -16605,6 +16605,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 306952641041501734, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 306952641041501734, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 306952641041501734, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -221053597
+      objectReference: {fileID: 0}
+    - target: {fileID: 448710987543468322, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 448710987543468322, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 448710987543468322, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 79395277
+      objectReference: {fileID: 0}
+    - target: {fileID: 837043235793223048, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1098801224318493644, guid: b2c04f02b1f2d4045ac8b527170ddc71, type: 3}
       propertyPath: m_LocalPosition.x
       value: 77.66
