@@ -264,6 +264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fear: 0
   fearBar: {fileID: 0}
+  playerVoidLevel: 0
+  musicBoxPieces: 0
 --- !u!114 &837043235793223048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +284,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 4294967295
   m_GroundCheck: {fileID: 3191043964571696184}
   m_CeilingCheck: {fileID: 3191298498203902308}
   m_CrouchDisableCollider: {fileID: 6771921155081969955}
@@ -560,7 +562,7 @@ Transform:
   m_GameObject: {fileID: 5666886953511907708}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.081358455, y: 0.13314864, z: -5.241561}
+  m_LocalPosition: {x: 0.08135853, y: 0.13314857, z: -5.241561}
   m_LocalScale: {x: 0.12287901, y: 0.11917411, z: 0.2964456}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -923,7 +925,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1284791681
-  m_SortingLayer: -1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6ffcfd041ca3f4e94ad2bc5ae9a27190, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5732,7 +5734,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2044100805
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0

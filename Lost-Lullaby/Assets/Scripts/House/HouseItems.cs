@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class HouseItems : MonoBehaviour
 {
     [SerializeField] GameObject item;
-    //[SerializeField] AudioClip clip;
+    [SerializeField] AudioClip clip;
     [SerializeField] GameObject itemInfo;
     bool shown = false;
     static int itemCount = 0;
@@ -20,7 +20,7 @@ public class HouseItems : MonoBehaviour
 
     [SerializeField] UIScriptLvl1 uiScript;
     [SerializeField] GameObject musicBox;
-    //[SerializeField] AudioClip tune;
+    [SerializeField] AudioClip tune;
     [SerializeField] HousePlayerMovement movementScript;
     [SerializeField] GameObject lightFlash;
 
@@ -33,7 +33,7 @@ public class HouseItems : MonoBehaviour
     {
         if (collider.CompareTag("Player") && shown == false) //only display if player hasnt seen it already
         {
-            //AudioSource.PlayClipAtPoint(clip, transform.position);
+            AudioSource.PlayClipAtPoint(clip, transform.position);
             Debug.Log("Contact with item");
             shown = true;
             yield return new WaitUntil(() => !showingMessage);
@@ -73,7 +73,7 @@ public class HouseItems : MonoBehaviour
     {
         itemInfo.SetActive(true);
         movementScript.enabled = false;
-        //AudioSource.PlayClipAtPoint(tune, transform.position);
+        AudioSource.PlayClipAtPoint(tune, transform.position);
         yield return new WaitForSeconds(5);
         StartCoroutine(Flash(2));
         yield return new WaitForSeconds(2);
